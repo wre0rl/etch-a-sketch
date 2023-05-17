@@ -3,7 +3,6 @@ const COLUMN = 16;
 
 const container = document.querySelector('.container');
 
-
 for (let i = 1; i <= COLUMN; i++) {
   const column = document.createElement('div');
   column.setAttribute('class', 'column');
