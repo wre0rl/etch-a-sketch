@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -5,20 +10,17 @@ body {
   align-items: center;
 }
 
-.container {
-  border: 1px solid black;
-  padding: 50px 50px 15px 50px;
+button {
+  padding: 2px;
 }
 
 .setting-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .sketch-container {
   display: flex;
-  height: 300px;
+  height: 500px;
   width: 500px;
   border: 1px solid black;
   border-radius: 8px;
