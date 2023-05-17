@@ -1,5 +1,5 @@
-const ROW = 16;
-const COLUMN = 16;
+const ROW = 64;
+const COLUMN = 64;
 
 const sketchContainer  = document.querySelector('.sketch-container ');
 
@@ -25,6 +25,7 @@ let isMouseDown = false;
 grid.forEach(el => {
   el.addEventListener('mousedown', () => {
     isMouseDown = true;
+    el.classList.add('trail');
   });
 
   el.addEventListener('mousemove', () => {
