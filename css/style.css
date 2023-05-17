@@ -13,6 +13,7 @@ body {
   display: flex;
   height: 400px;
   width: 400px;
+  border: 1px solid black;
 }
 
 .column {
@@ -22,7 +23,6 @@ body {
 }
 
 .grid {
-  border: 1px solid black;
   flex: 1;
 }
 
