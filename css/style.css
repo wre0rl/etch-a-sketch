@@ -4,8 +4,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+.setting-container {
+  margin-bottom: 10px;
+}
 
-.container {
+.sketch-container {
   display: flex;
   height: 400px;
   width: 400px;
