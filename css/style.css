@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .setting-container {
   margin-bottom: 10px;
 }
@@ -23,4 +24,8 @@ body {
 .grid {
   border: 1px solid black;
   flex: 1;
+}
+
+.trail {
+  background: black;
 }
