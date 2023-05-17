@@ -25,3 +25,13 @@ grid.forEach(el => {
     el.classList.add('trail');
   });
 });
+
+
+// Clear the grid
+const clear = document.querySelector('#clear');
+
+clear.addEventListener('click', () => {
+  grid.forEach(el => {
+    el.classList.remove('trail');
+  });
+});
