@@ -38,8 +38,6 @@ grid.forEach(el => {
   });
 });
 
-grid
-
 // Clear the grid
 const clear = document.querySelector('#clear');
 
