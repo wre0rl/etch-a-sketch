@@ -17,10 +17,10 @@ for (let i = 1; i <= COLUMN; i++) {
   }
 }
 
-// Change the div color by hovering the mouse
-const trail = document.querySelectorAll('.grid');
+// Change the grid color by hovering the mouse
+const grid = document.querySelectorAll('.grid');
 
-trail.forEach(el => {
+grid.forEach(el => {
   el.addEventListener('mouseover', () => {
     el.classList.add('trail');
   });
