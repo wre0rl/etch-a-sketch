@@ -28,4 +28,5 @@ body {
 
 .trail {
   background: black;
+  user-select: none;
 }
