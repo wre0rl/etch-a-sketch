@@ -17,15 +17,28 @@ for (let i = 1; i <= COLUMN; i++) {
   }
 }
 
-// Change the grid color by hovering the mouse
+// Change the grid color by clicking and hovering the mouse
 const grid = document.querySelectorAll('.grid');
 
+let isMouseDown = false;
+
 grid.forEach(el => {
-  el.addEventListener('mouseover', () => {
-    el.classList.add('trail');
+  el.addEventListener('mousedown', () => {
+    isMouseDown = true;
+  });
+
+  el.addEventListener('mousemove', () => {
+    if (isMouseDown) {
+      el.classList.add('trail');
+    }
+  });
+
+  el.addEventListener('mouseup', () => {
+    isMouseDown = false;
   });
 });
 
+grid
 
 // Clear the grid
 const clear = document.querySelector('#clear');
