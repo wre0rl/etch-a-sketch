@@ -47,20 +47,23 @@ function loadGrids(row, col) {
   getGrids();
 }
 
-loadGrids(64, 64); // First load
+loadGrids(32, 32); // First load
 
 
 // Resize the grids
 const resize = document.querySelector('#resize');
 
 resize.addEventListener('click', () => {
-  let size = +(prompt('Type the grid sizes.'));
-  //drawGrids(size, size);
+  let size = +(prompt('Type the grid sizes. Max: 64'));
   if (size) { // Check if it's a number
-    sketchContainer.textContent = ''; // Remove the sketch child element DOM
-    loadGrids(size, size);
+    if (size > 64) {
+      alert("You can't have more than 64 grids!")
+    } else {
+      sketchContainer.textContent = ''; // Remove the sketch child element DOM
+      loadGrids(size, size);
+    }
   } else {
-    console.log('NaN');
+    alert('NaN');
   }
 });
 
