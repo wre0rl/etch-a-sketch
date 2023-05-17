@@ -16,3 +16,12 @@ for (let i = 1; i <= COLUMN; i++) {
     column.appendChild(div);
   }
 }
+
+// Change the div color by hovering the mouse
+const trail = document.querySelectorAll('.grid');
+
+trail.forEach(el => {
+  el.addEventListener('mouseover', () => {
+    el.classList.add('trail');
+  });
+});
